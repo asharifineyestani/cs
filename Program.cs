@@ -8,7 +8,7 @@ namespace cs
         static void Main(string[] args)
         {
             Program program = new Program();
-            program.showEvenNumbersExample();
+            program.showFactorialExample();
 
         }
         
@@ -44,6 +44,12 @@ namespace cs
         {
             Numbers numbers = new Numbers();
             numbers.evenNumbers();
+        }
+        
+        public void showFactorialExample()
+        {
+            Numbers numbers = new Numbers();
+            numbers.calculateFactorialTheNumber();
         }
     }
 }

@@ -33,5 +33,22 @@ namespace cs
 
             Console.WriteLine(sum);
         }
+
+        public void calculateFactorialTheNumber()
+        {
+            Console.WriteLine("Enter your number:");
+
+            int num = int.Parse(Console.ReadLine());
+
+            int n = num;
+
+            if (num == 0)
+                n = 1;
+            
+            for (int i = n - 1; i > 0; i--)
+                n *= i;
+
+            Console.WriteLine("Factorial of {0}! = {1}\n", num, n);
+        }
     }
 }
