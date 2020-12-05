@@ -8,7 +8,7 @@ namespace cs
         static void Main(string[] args)
         {
             Program program = new Program();
-            program.showFriendExample();
+            program.showOddNumbersExample();
 
         }
         
@@ -31,8 +31,15 @@ namespace cs
             
             friends.getFriends();
             friends.checkFriend();
+            
+        }
+        
+        public void showOddNumbersExample()
+        {
+            Numbers numbers = new Numbers();
 
-           
+            numbers.oddNumbers();
+
         }
     }
 }
