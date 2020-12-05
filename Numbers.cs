@@ -19,5 +19,19 @@ namespace cs
 
             Console.WriteLine(sum / this.numbers.Count);
         }
+        
+        public void evenNumbers()
+        {
+            float sum = 0;
+            
+            for (int i = 1; i <= 100; i++)
+                if (i % 2 == 0)
+                    this.numbers.Add(i);
+
+            foreach (int number in this.numbers)
+                sum = sum + number;
+
+            Console.WriteLine(sum);
+        }
     }
 }

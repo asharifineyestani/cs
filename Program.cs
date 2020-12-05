@@ -8,7 +8,7 @@ namespace cs
         static void Main(string[] args)
         {
             Program program = new Program();
-            program.showOddNumbersExample();
+            program.showEvenNumbersExample();
 
         }
         
@@ -37,9 +37,13 @@ namespace cs
         public void showOddNumbersExample()
         {
             Numbers numbers = new Numbers();
-
             numbers.oddNumbers();
-
+        }
+        
+        public void showEvenNumbersExample()
+        {
+            Numbers numbers = new Numbers();
+            numbers.evenNumbers();
         }
     }
 }
