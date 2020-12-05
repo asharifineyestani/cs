@@ -8,7 +8,7 @@ namespace cs
         static void Main(string[] args)
         {
             Program program = new Program();
-            program.showAverageExample();
+            program.showFriendExample();
 
         }
         
@@ -23,6 +23,16 @@ namespace cs
             
             student.showAvg();
             
+        }
+        
+        public void showFriendExample()
+        {
+            Friends friends = new Friends();
+            
+            friends.getFriends();
+            friends.checkFriend();
+
+           
         }
     }
 }
