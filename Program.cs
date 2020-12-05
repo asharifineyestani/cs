@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 
 namespace cs
 {
@@ -6,7 +7,22 @@ namespace cs
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Program program = new Program();
+            program.showAverageExample();
+
+        }
+        
+        
+        public void showAverageExample()
+        {
+            Student student = new Student();
+            
+            student.setName();
+
+            student.setScores();
+            
+            student.showAvg();
+            
         }
     }
 }
