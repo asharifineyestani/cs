@@ -1,5 +1,8 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+
 namespace cs
 { 
     public class Numbers
@@ -8,16 +11,14 @@ namespace cs
         
         public void oddNumbers()
         {
-            float sum = 0;
+      		IEnumerable<int> oddNumbers = Enumerable.Range(100, 900).Where(x => x % 2 != 0);
             
-            for (int i = 100; i < 1000; i++)
-                if (i % 2 != 0)
-                    this.numbers.Add(i);
+            int sum = 0;
             
-            foreach (int number in this.numbers)
-                sum = sum + number;
+            foreach (int n in oddNumbers)
+                sum = sum + n;
 
-            Console.WriteLine(sum / this.numbers.Count);
+            Console.WriteLine(sum / new List<int>(oddNumbers).Count);
         }
         
         public void evenNumbers()
